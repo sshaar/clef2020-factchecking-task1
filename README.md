@@ -76,14 +76,15 @@ This can be measured as the extent to which the tweet aims to and has the capaci
 
 The datasets are text files with the information TAB separated. The text encoding is UTF-8. You will get:
 
-> tweet_id <TAB> tweet_url <TAB> tweet_text <TAB> claim <TAB> claim_worthiness
+> topic_id <TAB> tweet_id <TAB> tweet_url <TAB> tweet_text <TAB> claim <TAB> claim_worthiness
 
 Where: <br>
+* topic_id: unique ID for the topic the tweet is about <br/>
 * tweet_id: Tweet ID for a given tweets given by Twitter <br/>
 * tweet_url: URL to the given tweet <br/>
 * tweet_text: Text of the tweet <br/>
-* claim: 1 if the tweet is a claim; 0 otherwise. <br/>
-* claim_worthiness: 1 if the tweet is worth fact checking; 0 otherwise. <br/>
+* claim: 1 if the tweet is a claim; 0 otherwise <br/>
+* claim_worthiness: 1 if the tweet is worth fact checking; 0 otherwise <br/>
 
 Example:
 #TODO
