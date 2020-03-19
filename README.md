@@ -23,7 +23,8 @@ __Table of contents:__
   - [Evaluation Results](#evaluation-results)
   - [List of Versions](#list-of-versions)
   - [Contents of the Distribution v1.0](#contents-of-the-distribution-v10)
-  - [Data Format](#data-format)
+  - [Data](#data)
+    - [Data Format](#data-format)
   - [Results File Format](#results-file-format)
   - [Format checkers](#format-checkers)
   - [Scorers](#scorers)
@@ -51,9 +52,21 @@ We provide the following files:
     this file
 
 
-## Data Format
+## Data
 
-#TODO: We need to mention hwo we anntated the tweets. SO maybe we have.a summary n the instruction doc added here or in another section.
+The annotation of the tweets were done according to the following guidline. 
+
+We define a factuale claim as a claim that can be verified using factual, verifiable information such as statistics, specific examples, or personal testimony. 
+Some positive examples, stating a definition, mentioning quantity in the present or the past, etc.
+Some negative examples, spersonal opinions and preferences.
+
+If a claim contains a factual claim, to determine if it is a claim worth checking we answer 3 main quesitons,
+* To what extent does the tweet appear to contain false information? 
+* Will the tweet's claim have an effect on or be of interest to the general public?
+* To what extent does the tweet look weaponized, i.e., has the potential to do harm to the society or to person(s)/company(s)/product(s)?
+
+
+### Data Format
 
 The datasets are text files with the information TAB separated. The text encoding is UTF-8. You will get:
 
