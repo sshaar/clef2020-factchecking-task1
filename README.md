@@ -56,11 +56,11 @@ We provide the following files:
 
 The annotation of the tweets were done according to the following guidline. 
 
-We define a factuale claim as a claim that can be verified using factual, verifiable information such as statistics, specific examples, or personal testimony. 
-Some positive examples, stating a definition, mentioning quantity in the present or the past, etc.
-Some negative examples, spersonal opinions and preferences.
+We define a factuale claim as a claim that can be verified using factual, verifiable information such as statistics, specific examples, or personal testimony. For each tweet, we would label it as a claim or not based on that definition.
+Some positive examples include: stating a definition, mentioning quantity in the present or the past, etc.
+Some negative examples include: spersonal opinions and preferences.
 
-If a claim contains a factual claim, to determine if it is a claim worth checking we answer 3 main quesitons,
+If a tweet contains a factual claim, we determine if it is worth fact checking we try to answer 3 questions and based on their answer we determine of the tweet is worth fact checking. The questions we tried to answer were:
 * To what extent does the tweet appear to contain false information? 
 * Will the tweet's claim have an effect on or be of interest to the general public?
 * To what extent does the tweet look weaponized, i.e., has the potential to do harm to the society or to person(s)/company(s)/product(s)?
