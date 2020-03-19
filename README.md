@@ -94,7 +94,21 @@ Example:
 
 ## Results File Format
 
-#TODO
+For this task, the expected results file is a list of tweets with the estimated score for check-worthiness. Each row contains two tab-separated fields:
+
+> topic_id <TAB> tweet_id <TAB> score <TAB> run_id 
+
+Where: <br>
+* topic_id: unique ID for the topic the tweet is about given in the test dataset file <br/>
+* tweet_id: Tweet ID for a given tweets given by Twitter given in the test dataset file<br/>
+* score: score given by the participant's model about whether a claim is worth fact checking or not <br/>
+* run_id: string identifier used by participants. <br/>
+
+Example:
+> covid-19	1235648554338791427	0.39 <TAB> Model_1<br/>
+> covid-19	1235287380292235264	0.61 <TAB> Model_1<br/>
+> covid-19	1236020820947931136	0.76 <TAB> Model_1<br/>
+> ... <br/>
 
 ## Format checkers
 
