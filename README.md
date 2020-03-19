@@ -1,4 +1,4 @@
-# CLEF2020-CheckThat! Task 2
+# CLEF2020-CheckThat! Task 1
 
 This repository contains the _dataset_ for the [CLEF2020-CheckThat! task 1](https://sites.google.com/view/clef2020-checkthat/tasks/tasks-1-5-check-worthiness?authuser=0).
 
@@ -19,7 +19,7 @@ All changes and updates on these data sets and tools are reported in Section 1 o
 
 __Table of contents:__
 
-- [CLEF2020-CheckThat! Task 2](#clef2020-checkthat-task-2)
+- [CLEF2020-CheckThat! Task 1](#clef2020-checkthat-task-1)
   - [Evaluation Results](#evaluation-results)
   - [List of Versions](#list-of-versions)
   - [Contents of the Distribution v1.0](#contents-of-the-distribution-v10)
