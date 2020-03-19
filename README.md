@@ -61,9 +61,15 @@ Some positive examples include: stating a definition, mentioning quantity in the
 Some negative examples include: spersonal opinions and preferences.
 
 If a tweet contains a factual claim, we determine if it is worth fact checking we try to answer 3 questions and based on their answer we determine of the tweet is worth fact checking. The questions we tried to answer were:
-* To what extent does the tweet appear to contain false information? 
-* Will the tweet's claim have an effect on or be of interest to the general public?
-* To what extent does the tweet look weaponized, i.e., has the potential to do harm to the society or to person(s)/company(s)/product(s)?
+
+* To what extent does the tweet appear to contain false information? <br/>
+False information is news, stories or hoaxes created to deliberately misinform or deceive readers. To answer this question most often it is important to open the link to the tweet and to see if the tweet contains a link to an article from an reputable information source (e.g., Reuters, Associated Press, France Press, Aljazeera English, BBC) then the answer could be “Contains no false info”.
+
+* Will the tweet's claim have an effect on or be of interest to the general public? <br/>
+In general, topics such as healthcare, political news and findings, and current events are of higher interest to the general public. If it has higher interest to the public then fact-checking such tweets is important.
+
+* To what extent does the tweet look weaponized, i.e., has the potential to do harm to the society or to person(s)/company(s)/product(s)? <br/>
+This can be measured as the extent to which the tweet aims to and has the capacity to negatively affect the society as a whole or specific person(s), company(s), or product(s) or to spread rumours about them. If a tweet is harmful then it is worth checking it's validity.
 
 
 ### Data Format
