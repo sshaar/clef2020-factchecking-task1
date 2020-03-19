@@ -112,7 +112,7 @@ Task 1 Organizers:
 
 * Alex <br/>
 
-* Firoj, Qatar Computing Research Institute, HBKU <br/>
+* Firoj Alam, Qatar Computing Research Institute, HBKU <br/>
 
 * Shaden Shaar, Qatar Computing Research Institute, HBKU <br/>
 
