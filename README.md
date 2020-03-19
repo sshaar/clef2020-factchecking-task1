@@ -24,7 +24,7 @@ __Table of contents:__
   - [List of Versions](#list-of-versions)
   - [Contents of the Distribution v1.0](#contents-of-the-distribution-v10)
   - [Data Format](#data-format)
-  - [__Results File Format__](#results-file-format)
+  - [Results File Format](#results-file-format)
   - [Format checkers](#format-checkers)
   - [Scorers](#scorers)
     - [Evaluation metrics](#evaluation-metrics)
@@ -69,7 +69,7 @@ Where: <br>
 Example:
 #TODO
 
-## __Results File Format__:
+## Results File Format
 
 #TODO
 
