@@ -1,7 +1,7 @@
 # CLEF2020-CheckThat! Task 1 on Check-worthiness on Tweets
 
 This repository contains the _dataset_, _format checker, scorer and baselines_ for the [CLEF2020-CheckThat! task 1](https://sites.google.com/view/clef2020-checkthat/tasks/tasks-1-5-check-worthiness?authuser=0). 
-The task, given a stream of tweets, consists in ranking them according to their check-worthiness. 
+The task consists in ranking a stream of tweets according to their check-worthiness. 
 
 ````
 FCPD corpus for the CLEF-2020 LAB on "Automatic Identification and Verification of Claims"
