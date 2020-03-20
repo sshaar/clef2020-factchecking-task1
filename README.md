@@ -53,7 +53,8 @@ We provide the following files:
 
 ### Input Dataset
 
-The datasets are text files with the information TAB separated. The text encoding is UTF-8. You will get:
+The datasets are TAB separated text files. The text encoding is UTF-8. 
+A row of the file has the following format:
 
 > topic_id <TAB> tweet_id <TAB> tweet_url <TAB> tweet_text <TAB> claim <TAB> claim_worthiness
 
@@ -61,7 +62,7 @@ Where: <br>
 * topic_id: unique ID for the topic the tweet is about <br/>
 * tweet_id: Tweet ID for a given tweets given by Twitter <br/>
 * tweet_url: URL to the given tweet <br/>
-* tweet_text: Text of the tweet <br/>
+* tweet_text: content of the tweet <br/>
 * claim: 1 if the tweet is a claim; 0 otherwise <br/>
 * check_worthiness: 1 if the tweet is worth fact checking; 0 otherwise <br/>
 
@@ -86,9 +87,9 @@ Where: <br>
 * run_id: string identifier used by participants. <br/>
 
 Example:
-> covid-19	1235648554338791427	0.39 <TAB> Model_1<br/>
-> covid-19	1235287380292235264	0.61 <TAB> Model_1<br/>
-> covid-19	1236020820947931136	0.76 <TAB> Model_1<br/>
+> covid-19	1235648554338791427	0.39  Model_1<br/>
+> covid-19	1235287380292235264	0.61  Model_1<br/>
+> covid-19	1236020820947931136	0.76  Model_1<br/>
 > ... <br/>
 
 ## Data Annotation Process
