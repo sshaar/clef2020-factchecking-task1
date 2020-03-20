@@ -1,8 +1,7 @@
-# CLEF2020-CheckThat! Task 1
+# CLEF2020-CheckThat! Task 1 on Check-worthiness on Tweets
 
-This repository contains the _dataset_ for the [CLEF2020-CheckThat! task 1](https://sites.google.com/view/clef2020-checkthat/tasks/tasks-1-5-check-worthiness?authuser=0).
-
-It also contains the _format checker, scorer and baselines_ for the task.
+This repository contains the _dataset_, _format checker, scorer and baselines_ for the [CLEF2020-CheckThat! task 1](https://sites.google.com/view/clef2020-checkthat/tasks/tasks-1-5-check-worthiness?authuser=0). 
+The task, given a stream of tweets, consists in ranking them according to their check-worthiness. 
 
 ````
 FCPD corpus for the CLEF-2020 LAB on "Automatic Identification and Verification of Claims"
@@ -10,10 +9,9 @@ Version 1.0: March ?, 2020 (Data and Baseline Release)
 ````
 
 This file contains the basic information regarding the CLEF2020-CheckThat! Task 1
-on evidence retrieval estimation dataset provided for the CLEF2020-CheckThat! Lab
+on check-worthiness on tweets dataset dataset provided for the CLEF2020-CheckThat! Lab
 on "Automatic Identification and Verification of Claims".
-The current version (1.0, March ?, 2020) corresponds to the release of a
-part of the training data set.
+The current version (1.0, March 20th, 2020) corresponds to the release of the first batch of the training data set. 
 The test set will be provided in future versions.
 All changes and updates on these data sets and tools are reported in Section 1 of this document.
 
@@ -84,7 +82,7 @@ Where: <br>
 * tweet_url: URL to the given tweet <br/>
 * tweet_text: Text of the tweet <br/>
 * claim: 1 if the tweet is a claim; 0 otherwise <br/>
-* claim_worthiness: 1 if the tweet is worth fact checking; 0 otherwise <br/>
+* check_worthiness: 1 if the tweet is worth fact checking; 0 otherwise <br/>
 
 Example:
 > covid-19	1235648554338791427	https://twitter.com/A6Asap/status/1235648554338791427	COVID-19 health advice⚠️ https://t.co/XsSAo52Smu	0	0 <br/>
