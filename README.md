@@ -21,9 +21,10 @@ __Table of contents:__
   - [Evaluation Results](#evaluation-results)
   - [List of Versions](#list-of-versions)
   - [Contents of the Distribution v1.0](#contents-of-the-distribution-v10)
-  - [Data](#data)
-    - [Data Format](#data-format)
-  - [Results File Format](#results-file-format)
+  - [Data Format](#data-format)
+    - [Input Dataset](#input-dataset)
+    - [Results File](#results-file)
+  - [Data Annotation Process](#data-annotation-process)
   - [Format checkers](#format-checkers)
   - [Scorers](#scorers)
     - [Evaluation metrics](#evaluation-metrics)
@@ -49,28 +50,9 @@ We provide the following files:
   * [README.md](README.md) <br/>
     this file
 
+## Data Format
 
-## Data
-
-The annotation of the tweets were done according to the following guidline. 
-
-We define a factuale claim as a claim that can be verified using factual, verifiable information such as statistics, specific examples, or personal testimony. For each tweet, we would label it as a claim or not based on that definition.
-Some positive examples include: stating a definition, mentioning quantity in the present or the past, etc.
-Some negative examples include: spersonal opinions and preferences.
-
-If a tweet contains a factual claim, we determine if it is worth fact checking we try to answer 3 questions and based on their answer we determine of the tweet is worth fact checking. The questions we tried to answer were:
-
-* *To what extent does the tweet appear to contain false information?* <br/>
-False information is news, stories or hoaxes created to deliberately misinform or deceive readers. To answer this question most often it is important to open the link to the tweet and to see if the tweet contains a link to an article from an reputable information source (e.g., Reuters, Associated Press, France Press, Aljazeera English, BBC) then the answer could be “Contains no false info”.
-
-* *Will the tweet's claim have an effect on or be of interest to the general public?* <br/>
-In general, topics such as healthcare, political news and findings, and current events are of higher interest to the general public. If it has higher interest to the public then fact-checking such tweets is important.
-
-* *To what extent does the tweet look weaponized, i.e., has the potential to do harm to the society or to person(s)/company(s)/product(s)?* <br/>
-This can be measured as the extent to which the tweet aims to and has the capacity to negatively affect the society as a whole or specific person(s), company(s), or product(s) or to spread rumours about them. If a tweet is harmful then it is worth checking it's validity.
-
-
-### Data Format
+### Input Dataset
 
 The datasets are text files with the information TAB separated. The text encoding is UTF-8. You will get:
 
@@ -90,9 +72,11 @@ Example:
 > covid-19	1236020820947931136	https://twitter.com/ddale8/status/1236020820947931136	Epidemiologist Marc Lipsitch, director of Harvard's Center for Communicable Disease Dynamics: “In the US it is the opposite of contained.' https://t.co/IPAPagz4Vs	1	1 <br/>
 > ... <br/>
 
-## Results File Format
+Note that the gold labels for the task are the ones in the *check_worthiness* column 
 
-For this task, the expected results file is a list of tweets with the estimated score for check-worthiness. Each row contains two tab-separated fields:
+### Results File
+
+For this task, the expected results file is a list of tweets with the estimated score for check-worthiness. Each row contains four tab-separated fields:
 
 > topic_id <TAB> tweet_id <TAB> score <TAB> run_id 
 
@@ -108,6 +92,26 @@ Example:
 > covid-19	1236020820947931136	0.76 <TAB> Model_1<br/>
 > ... <br/>
 
+## Data Annotation Process
+
+The annotation of the tweets were done according to the following guidelines. 
+
+We define a factuale claim as a claim that can be verified using factual, verifiable information such as statistics, specific examples, or personal testimony. For each tweet, we would label it as a claim or not based on that definition.
+Some positive examples include: stating a definition, mentioning quantity in the present or the past, etc.
+Some negative examples include: spersonal opinions and preferences.
+
+If a tweet contains a factual claim, we determine if it is worth fact checking we try to answer 3 questions and based on their answer we determine of the tweet is worth fact checking. The questions we tried to answer were:
+
+* *To what extent does the tweet appear to contain false information?* <br/>
+False information is news, stories or hoaxes created to deliberately misinform or deceive readers. To answer this question most often it is important to open the link to the tweet and to see if the tweet contains a link to an article from an reputable information source (e.g., Reuters, Associated Press, France Press, Aljazeera English, BBC) then the answer could be “Contains no false info”.
+
+* *Will the tweet's claim have an effect on or be of interest to the general public?* <br/>
+In general, topics such as healthcare, political news and findings, and current events are of higher interest to the general public. If it has higher interest to the public then fact-checking such tweets is important.
+
+* *To what extent does the tweet look weaponized, i.e., has the potential to do harm to the society or to person(s)/company(s)/product(s)?* <br/>
+This can be measured as the extent to which the tweet aims to and has the capacity to negatively affect the society as a whole or specific person(s), company(s), or product(s) or to spread rumours about them. If a tweet is harmful then it is worth checking it's validity.
+
+
 ## Format checkers
 
 TBA
@@ -118,7 +122,8 @@ TBA
 
 ### Evaluation metrics
 
-#TODO
+The ranked list per topic will be evaluated using ranking evaluation measures (MAP, P@5,10…,P@30). 
+The official measure is P@30.
 
 ## Baseline
 
@@ -132,7 +137,7 @@ TBA
 
 Task 1 Organizers:
 
-* Alex <br/>
+* Alex Nikolov, Sofia University <br/>
 
 * Firoj Alam, Qatar Computing Research Institute, HBKU <br/>
 
