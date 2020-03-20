@@ -1,4 +1,4 @@
-# CLEF2020-CheckThat! Task 1 on Check-worthiness on Tweets
+# CLEF2020-CheckThat! Task 1 on Check-worthiness for Tweets
 
 This repository contains the _dataset_, _format checker, scorer and baselines_ for the [CLEF2020-CheckThat! task 1](https://sites.google.com/view/clef2020-checkthat/tasks/tasks-1-5-check-worthiness?authuser=0). 
 The task consists in ranking a stream of tweets according to their check-worthiness. 
@@ -123,7 +123,6 @@ TBA
 ### Evaluation metrics
 
 The ranked list per topic will be evaluated using ranking evaluation measures (MAP, P@5,10…,P@30). 
-The official measure is P@30.
 
 ## Baseline
 
