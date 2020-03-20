@@ -13,14 +13,13 @@ on check-worthiness on tweets dataset dataset provided for the CLEF2020-CheckTha
 on "Automatic Identification and Verification of Claims".
 The current version (1.0, March 20th, 2020) corresponds to the release of the first batch of the training data set. 
 The test set will be provided in future versions.
-All changes and updates on these data sets and tools are reported in Section 1 of this document.
 
 __Table of contents:__
 
 - [CLEF2020-CheckThat! Task 1](#clef2020-checkthat-task-1)
   - [Evaluation Results](#evaluation-results)
   - [List of Versions](#list-of-versions)
-  - [Contents of the Distribution v1.0](#contents-of-the-distribution-v10)
+  - [Contents of the Repository](#contents-of-the-repository)
   - [Data Format](#data-format)
     - [Input Dataset](#input-dataset)
     - [Results File](#results-file)
@@ -40,7 +39,7 @@ TBA
 
 * __v1.0 [2020/03/?]__ - Training data. The training data for task 1 contains (?) Tweets.
 
-## Contents of the Distribution v1.0
+## Contents of the Repository
 
 We provide the following files:
 
