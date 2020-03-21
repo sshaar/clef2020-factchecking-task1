@@ -5,7 +5,7 @@ The task consists in ranking a stream of tweets according to their check-worthin
 
 ````
 FCPD corpus for the CLEF-2020 LAB on "Automatic Identification and Verification of Claims"
-Version 1.0: March ?, 2020 (Data and Baseline Release)
+Version 1.0: March 20, 2020 (Data and Baseline Release)
 ````
 
 This file contains the basic information regarding the CLEF2020-CheckThat! Task 1
@@ -37,7 +37,7 @@ TBA
 
 ## List of Versions
 
-* __v1.0 [2020/03/?]__ - Training data. The training data for task 1 contains (?) Tweets.
+* __v1.0 [2020/03/?]__ - Training data. The training data for task 1 contains 637 annotated Tweets.
 
 ## Contents of the Repository
 
