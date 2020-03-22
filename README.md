@@ -1,4 +1,4 @@
-# CLEF2020-CheckThat! Task 1 on Check-worthiness for Tweets
+# CLEF2020-CheckThat! Task 1 on Check-Worthiness for Tweets
 
 This repository contains the _dataset_, _format checker, scorer and baselines_ for the [CLEF2020-CheckThat! task 1](https://sites.google.com/view/clef2020-checkthat/tasks/tasks-1-5-check-worthiness?authuser=0). 
 The task consists in ranking a stream of tweets according to their check-worthiness. 
@@ -37,7 +37,7 @@ TBA
 
 ## List of Versions
 
-* __v1.0 [2020/03/?]__ - Training data. The training data for task 1 contains 637 annotated Tweets.
+* __v1.0 [2020/03/22]__ - Training data. The training data for task 1 contains 637 annotated Tweets.
 
 ## Contents of the Repository
 
@@ -45,9 +45,11 @@ We provide the following files:
 
 * Main folder: [data](data)
   * [training.tsv](data/training.tsv) <br/>
-  Contains all the tweets with claim worthiness labels.
-  * [README.md](README.md) <br/>
-    this file
+  Contains the training tweets with claim worthiness labels.
+  * [training.tsv](data/training.tsv) <br/>
+  Contains the dev tweets with claim worthiness labels.
+* [README.md](README.md) <br/>
+  this file
 
 ## Data Format
 
@@ -114,11 +116,28 @@ This can be measured as the extent to which the tweet aims to and has the capaci
 
 ## Format checkers
 
-TBA
+The checker for the subtask is located in the [format_checker](format_checker) module of the project.
+The format checker verifies that your generated results file complies with the expected format.
+To launch it run: 
+> python3 format_checker/main.py --pred_file_path=<path_to_your_results_file> <br/>
+
+Note that the checker can not verify whether the prediction file you submit contain all lines / claims), because it does not have access to the corresponding gold file.
+
+The script used is adapted from the one for the [CLEF2019 Check That! Lab Task 1 (check-worthiness)](https://github.com/apepa/clef2019-factchecking-task1).
 
 ## Scorers
 
-TBA
+Launch the scorer for the task as follows:
+> python3 scorer/main.py --gold_file_path="<path_gold_file_1, path_to_gold_file_k>" --pred_file_path="<predictions_file_1, predictions_file_k>" <br/>
+
+Both `--gold_file_path` and `--pred_file_path` take a single string that contains a comma separated list of file paths. The lists may be of arbitraty positive length (so even a single file path is OK) but their lengths must match.
+
+__<path_to_gold_file_n>__ is the path to the file containing the gold annotations for topic/batch __n__ and __<predictions_file_n>__ is the path to the corresponding file with participants' predictions for topic/batch __n__, which must follow the format, described in the 'Results File Format' section.
+
+The scorer invokes the format checker for the task to verify the output is properly shaped.
+It also handles checking if the provided predictions file contains all lines / tweets from the gold one.
+
+The script used is adapted from the one for the [CLEF2019 Check That! Lab Task 1 (check-worthiness)](https://github.com/apepa/clef2019-factchecking-task1).
 
 ### Evaluation metrics
 
@@ -126,7 +145,19 @@ The ranked list per topic will be evaluated using ranking evaluation measures (M
 
 ## Baseline
 
-TBA
+The [baselines](/baselines) module contains a random and a simple ngram baseline for the task.
+To launch the baseline script you need to install packages dependencies found in [requirement.txt](requirement.txt) using the following:
+> pip3 install -r requirement.txt <br/>
+
+To launch the baseline script run the following:
+> python3 baselines/baselines.py  <br/>
+
+Both of the baselines will be trained on all but the latest 20% of the debates as they are used as the dev dataset.
+The performance of both baselines will be displayed:<br/>
+Random Baseline AVGP: 0.4378835232034028<br/>
+Ngram Baseline AVGP: 0.8178620442105289<br/>
+
+The scripts used are adapted from the ones for the [CLEF2019 Check That! Lab Task 1 (check-worthiness)](https://github.com/apepa/clef2019-factchecking-task1).
 
 ## Licensing
 
