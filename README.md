@@ -152,7 +152,7 @@ To launch the baseline script you need to install packages dependencies found in
 To launch the baseline script run the following:
 > python3 baselines/baselines.py  <br/>
 
-Both of the baselines will be trained on all but the latest 20% of the debates as they are used as the dev dataset.
+Both of the baselines will be trained on the training tweets from [training.tsv](data/training.tsv) and the performace of the model was was evaluated on the dev tweets from [dev.tsv](data/dev.tsv)
 The performance of both baselines will be displayed:<br/>
 Random Baseline AVGP: 0.4378835232034028<br/>
 Ngram Baseline AVGP: 0.8178620442105289<br/>
