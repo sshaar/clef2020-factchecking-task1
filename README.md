@@ -137,7 +137,7 @@ __<path_to_gold_file_n>__ is the path to the file containing the gold annotation
 The scorer invokes the format checker for the task to verify the output is properly shaped.
 It also handles checking if the provided predictions file contains all lines / tweets from the gold one.
 
-The script used is adapted from the one for the [CLEF2019 Check That! Lab Task 1 (check-worthiness)](https://github.com/apepa/clef2019-factchecking-task1).
+The script used is adapted from the one for the [CLEF2019 Check That! Lab Task 5 (check-worthiness for political debates)](https://github.com/apepa/clef2019-factchecking-task5).
 
 ### Evaluation metrics
 
