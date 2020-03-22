@@ -22,12 +22,12 @@ def check_format(file_path):
     with open(file_path, encoding='UTF-8') as out:
         file_content = out.read().strip()
         for i, line in enumerate(file_content.split('\n')):
-            if not _LINE_PATTERN_A.match(line.strip()):
+            topic_id, tweet_id, score, run_id = line.strip().split('\t')
+
+            if not _LINE_PATTERN_A.match("%s\t%s"%(tweet_id, score)):
                 # 1. Check line format.
                 logging.error("Wrong line format: {}".format(line))
                 return False
-
-            tweet_id, score = line.split('\t')
             tweet_id = int(tweet_id)
             score = float(score.strip())
 

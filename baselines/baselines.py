@@ -22,13 +22,14 @@ from functools import reduce
 random.seed(0)
 ROOT_DIR = dirname(dirname(__file__))
 
-
+# topic_id tweet_id score run_id
 def run_random_baseline(data_fpath):
     results_fpath = join(ROOT_DIR, 'baselines/data/task1_random_baseline_%s'%(os.path.basename(data_fpath)))
     gold_df = pd.read_csv(data_fpath, sep='\t')
     with open(results_fpath, "w") as results_file:
         for i, line in gold_df.iterrows():
-            results_file.write('{}\t{}\n'.format(line['tweet_id'], random.random()))
+            results_file.write('{}\t{}\t{}\t{}\n'.format(line['topic_id'], line['tweet_id'], 
+                random.random(), "random"))
 
 
 def run_ngram_baseline(train_fpath, test_fpath):
@@ -44,8 +45,10 @@ def run_ngram_baseline(train_fpath, test_fpath):
     results_fpath = join(ROOT_DIR, 'baselines/data/task1_ngram_baseline_%s'%(os.path.basename(test_fpath)))
     with open(results_fpath, "w") as results_file:
         predicted_distance = pipeline.decision_function(test_df['tweet_text'])
-        for tweet_id, dist in zip(test_df['tweet_id'], predicted_distance):
-            results_file.write("{}\t{}\n".format(tweet_id, dist))
+        for i, line in test_df.iterrows():
+            dist = predicted_distance[i]
+            results_file.write("{}\t{}\t{}\t{}\n".format(line['topic_id'], line['tweet_id'], 
+                dist, "random"))
 
 
 def run_baselines():

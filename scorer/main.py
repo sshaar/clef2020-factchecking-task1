@@ -40,14 +40,14 @@ def _read_gold_and_pred(gold_fpath, pred_fpath):
     line_score = []
     with open(pred_fpath) as pred_f:
         for line in pred_f:
-            line_number, score = line.split('\t')
-            line_number = int(line_number.strip())
+            topic_id, tweet_id, score, run_id  = line.split('\t')
+            tweet_id = int(tweet_id.strip())
             score = float(score.strip())
 
-            if line_number not in gold_labels:
-                logging.error('No such line_number: {} in gold file!'.format(line_number))
+            if tweet_id not in gold_labels:
+                logging.error('No such tweet_id: {} in gold file!'.format(tweet_id))
                 quit()
-            line_score.append((line_number, score))
+            line_score.append((tweet_id, score))
 
     if len(set(gold_labels).difference([tup[0] for tup in line_score])) != 0:
         logging.error('The predictions do not match the lines from the gold file - missing or extra line_no')
