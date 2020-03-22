@@ -26,7 +26,7 @@ def _read_gold_and_pred(gold_fpath, pred_fpath):
     logging.info("Reading gold predictions from file {}".format(gold_fpath))
 
     gold_labels = {}
-    with open(gold_fpath) as gold_f:
+    with open(gold_fpath, encoding='utf-8') as gold_f:
 
         for line_res in gold_f:
             (topic_id, tweet_id, tweet_url, tweet_text, claim, check_worthiness) = line_res.strip().split('\t')  # process the line from the res file

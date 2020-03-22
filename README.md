@@ -147,7 +147,7 @@ The official evaluation measure is MAP, but we also report (P@5,10…,P@30).
 
 The [baselines](/baselines) module contains a random and a simple ngram baseline for the task.
 To launch the baseline script you need to install packages dependencies found in [requirement.txt](requirement.txt) using the following:
-> pip3 install -r requirement.txt <br/>
+> pip3 install -r requirements.txt <br/>
 
 To launch the baseline script run the following:
 > python3 baselines/baselines.py  <br/>
