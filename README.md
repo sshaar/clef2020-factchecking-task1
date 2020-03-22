@@ -37,7 +37,7 @@ TBA
 
 ## List of Versions
 
-* __v1.0 [2020/03/22]__ - Training data. The training data for task 1 contains 637 annotated Tweets.
+* __v1.0 [2020/03/22]__ - Training/Dev data. The training data for task 1 contains 488 annotated tweets and the dev data for contains 150 annotated tweets.
 
 ## Contents of the Repository
 
@@ -46,7 +46,7 @@ We provide the following files:
 * Main folder: [data](data)
   * [training.tsv](data/training.tsv) <br/>
   Contains the training tweets with claim worthiness labels.
-  * [training.tsv](data/training.tsv) <br/>
+  * [dev.tsv](data/dev.tsv) <br/>
   Contains the dev tweets with claim worthiness labels.
 * [README.md](README.md) <br/>
   this file
