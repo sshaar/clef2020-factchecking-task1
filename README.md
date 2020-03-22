@@ -123,7 +123,7 @@ To launch it run:
 
 Note that the checker can not verify whether the prediction file you submit contain all lines / claims), because it does not have access to the corresponding gold file.
 
-The script used is adapted from the one for the [CLEF2019 Check That! Lab Task 1 (check-worthiness)](https://github.com/apepa/clef2019-factchecking-task1).
+The script used is adapted from the one for the [CLEF2019 Check That! Lab Task 5 (check-worthiness for political debates)](https://github.com/apepa/clef2019-factchecking-task5).
 
 ## Scorers
 
@@ -141,7 +141,7 @@ The script used is adapted from the one for the [CLEF2019 Check That! Lab Task 1
 
 ### Evaluation metrics
 
-The ranked list per topic will be evaluated using ranking evaluation measures (MAP, P@5,10…,P@30). 
+The official evaluation measure is MAP, but we also report (P@5,10…,P@30). 
 
 ## Baseline
 
@@ -152,12 +152,12 @@ To launch the baseline script you need to install packages dependencies found in
 To launch the baseline script run the following:
 > python3 baselines/baselines.py  <br/>
 
-Both of the baselines will be trained on the training tweets from [training.tsv](data/training.tsv) and the performace of the model was was evaluated on the dev tweets from [dev.tsv](data/dev.tsv)
+Both baselines will be trained on the training tweets from [training.tsv](data/training.tsv) and the performace of the model was was evaluated on the dev tweets from [dev.tsv](data/dev.tsv)
 The performance of both baselines will be displayed:<br/>
 Random Baseline AVGP: 0.4378835232034028<br/>
 Ngram Baseline AVGP: 0.8178620442105289<br/>
 
-The scripts used are adapted from the ones for the [CLEF2019 Check That! Lab Task 1 (check-worthiness)](https://github.com/apepa/clef2019-factchecking-task1).
+The scripts used are adapted from the ones for the [CLEF2019 Check That! Lab Task 5 (check-worthiness for political debates)](https://github.com/apepa/clef2019-factchecking-task5).
 
 ## Licensing
 
