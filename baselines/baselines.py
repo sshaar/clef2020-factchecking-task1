@@ -48,7 +48,7 @@ def run_ngram_baseline(train_fpath, test_fpath):
         for i, line in test_df.iterrows():
             dist = predicted_distance[i]
             results_file.write("{}\t{}\t{}\t{}\n".format(line['topic_id'], line['tweet_id'], 
-                dist, "random"))
+                dist, "ngram"))
 
 
 def run_baselines():
