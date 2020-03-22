@@ -76,7 +76,7 @@ Example:
 
 Note that the gold labels for the task are the ones in the *check_worthiness* column 
 
-### Results File
+## Results File
 
 For this task, the expected results file is a list of tweets with the estimated score for check-worthiness. Each row contains four tab-separated fields:
 
