@@ -37,17 +37,30 @@ TBA
 
 ## List of Versions
 
-* __v1.0 [2020/03/22]__ - Training/Dev data. The training data for task 1 contains 488 annotated tweets and the dev data for contains 150 annotated tweets.
+* __v1.0 [2020/03/22]__ - Training/Dev data. The training data for task 1 contains 488 annotated tweets and the dev data contains 150 annotated tweets.
+
+* __v2.0 [2020/05/17]__ - Training/dev data with updated labels. The training dataset has been extended to 672 annotated tweets, whereas the dev dataset contains 150 tweets.
 
 ## Contents of the Repository
 
 We provide the following files:
 
 * Main folder: [data](data)
-  * [training.tsv](data/training.tsv) <br/>
-  Contains the training tweets with claim worthiness labels.
-  * [dev.tsv](data/dev.tsv) <br/>
-  Contains the dev tweets with claim worthiness labels.
+  * Subfolder: [v1](data/v1)
+    * [training.tsv](data/v1/training.tsv) <br/>
+    Contains the training tweets with claim worthiness labels from the first (outdated) version of the data
+    * [dev.tsv](data/v1/dev.tsv) <br/>
+    Contains the dev tweets with claim worthiness labels from the first (outdated) version of the data
+  * Subfolder: [v2](data/v2)
+    * [training_v2.tsv](data/v2/training_v2.tsv) <br/>
+    Contains the training tweets with claim worthiness labels from the second (and latest) version of the data
+    * [dev_v2.tsv](data/v2/dev_v2.tsv) <br/>
+    Contains the dev tweets with claim worthiness labels from the second (and latest) version of the data
+    * [training_v2.json](data/v2/dev_v2.json) <br/>
+    Contains the [twitter object](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object) for the tweets included in the v2 training dataset
+    * [dev_v2.json](data/v2/dev_v2.json) <br/>
+    Contains the twitter object for the tweets included in the dev dataset
+    Note: Not all tweets which are included in the training and dev sets have a corresponding twitter object
 * [README.md](README.md) <br/>
   this file
 
@@ -154,8 +167,8 @@ To launch the baseline script run the following:
 
 Both baselines will be trained on the training tweets from [training.tsv](data/training.tsv) and the performace of the model was was evaluated on the dev tweets from [dev.tsv](data/dev.tsv)
 The performance of both baselines will be displayed:<br/>
-Random Baseline AVGP: 0.4378835232034028<br/>
-Ngram Baseline AVGP: 0.8178620442105289<br/>
+Random Baseline AVGP: 0.34661954358047853<br/>
+Ngram Baseline AVGP: 0.6926897425211712<br/>
 
 The scripts used are adapted from the ones for the [CLEF2019 Check That! Lab Task 5 (check-worthiness for political debates)](https://github.com/apepa/clef2019-factchecking-task5).
 

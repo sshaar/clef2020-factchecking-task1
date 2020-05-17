@@ -52,8 +52,8 @@ def run_ngram_baseline(train_fpath, test_fpath):
 
 
 def run_baselines():
-    train_fpath = join(ROOT_DIR, 'data/training.tsv')
-    test_fpath = join(ROOT_DIR, 'data/dev.tsv')
+    train_fpath = join(ROOT_DIR, 'data/v2/training_v2.tsv')
+    test_fpath = join(ROOT_DIR, 'data/v2/dev_v2.tsv')
 
 
     run_random_baseline(test_fpath)
