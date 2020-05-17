@@ -56,7 +56,7 @@ We provide the following files:
     Contains the training tweets with claim worthiness labels from the second (and latest) version of the data
     * [dev_v2.tsv](data/v2/dev_v2.tsv) <br/>
     Contains the dev tweets with claim worthiness labels from the second (and latest) version of the data
-    * [training_v2.json](data/v2/dev_v2.json) <br/>
+    * [training_v2.json](data/v2/training_v2.json) <br/>
     Contains the [twitter object](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object) for the tweets included in the v2 training dataset
     * [dev_v2.json](data/v2/dev_v2.json) <br/>
     Contains the twitter object for the tweets included in the dev dataset
