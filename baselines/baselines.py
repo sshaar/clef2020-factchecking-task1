@@ -40,7 +40,7 @@ def run_ngram_baseline(train_fpath, test_fpath):
         ('ngrams', TfidfVectorizer(ngram_range=(1, 1))),
         ('clf', SVC(C=1, gamma=0.75, kernel='rbf', random_state=0))
     ])
-    pipeline.fit(train_df['tweet_text'], train_df['claim_worthiness'])
+    pipeline.fit(train_df['tweet_text'], train_df['check_worthiness'])
 
     results_fpath = join(ROOT_DIR, 'baselines/data/task1_ngram_baseline_%s'%(os.path.basename(test_fpath)))
     with open(results_fpath, "w") as results_file:
