@@ -71,7 +71,7 @@ We provide the following files:
 The datasets are TAB separated text files. The text encoding is UTF-8. 
 A row of the file has the following format:
 
-> topic_id <TAB> tweet_id <TAB> tweet_url <TAB> tweet_text <TAB> claim <TAB> claim_worthiness
+> topic_id <TAB> tweet_id <TAB> tweet_url <TAB> tweet_text <TAB> claim <TAB> check_worthiness
 
 Where: <br>
 * topic_id: unique ID for the topic the tweet is about <br/>
