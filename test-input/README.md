@@ -1,4 +1,4 @@
-This folder contains a zip file [test-input.zip](test-input.zip) with the test files without the gold labels. 
+This folder contains a ZIP file [test-input.zip](test-input.zip) with the test files without the gold labels. 
 There are 140 tweets that will be used to test your models. 
 <br>
 The ZIP file contains two files a json file containing the Twitter object of the test tweets and a TSV file that has an identical format to that in the training/dev set, except that the fifth and the sixth columns are missing.  
