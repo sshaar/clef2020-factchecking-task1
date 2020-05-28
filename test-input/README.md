@@ -1,7 +1,8 @@
 This folder contains a zip file [test-input.zip](test-input.zip) with the test files without the gold labels. 
 There are 140 tweets that will be used to test your models. 
 <br>
-The zip file contains two files a json file containing te tweitter object of the the test tweets and a tsv files that has an identical format to that in the training/dev set, except that the fifth and sixth columns are missing.  
+The ZIP file contains two files a json file containing the Twitter object of the test tweets and a TSV file that has an identical format to that in the training/dev set, except that the fifth and the sixth columns are missing.  
+
 For instance, test-input.tsv looks like this:
 
 > topic_id	tweet_id	tweet_url	tweet_text <br>
@@ -12,8 +13,7 @@ For instance, test-input.tsv looks like this:
 The folder [test-input](./) contains also a [submission_instance.tsv](submission_instance.tsv) file that is an example of what we 
 expect the participants to submit.
 
-As mentioned in the main page in the [Results File Format subsection](https://github.com/sshaar/clef2020-factchecking-task1#results-file) the submission files should have the same format as those used during training: tab-separated topic_id, tweet_id, score and run_id one instance per line. 
-WHere the score is the judgment given by the participants about whether a claim is worth fact checking or not.
+As mentioned in the main page in the [Results File Format subsection](https://github.com/sshaar/clef2020-factchecking-task1#results-file) the submission files should have the same format as the files used during training: tab-separated topic_id, tweet_id, score and run_id one instance per line, where the score is the judgment given by the participants about whether a claim is worth fact-checking.
 From the example:
 
 > [...] <br>
@@ -23,18 +23,17 @@ From the example:
 > covid-19	1237050222485868544	0.7837985890347726	random <br>
 > [...]
 
-The scores were computed using the random baseline given in the [baseline script](../baselines/baselines.py).
+The scores in the example submission were computed using the random baseline given in [baseline script](../baselines/baselines.py).
 
-We have implemented some [checkers](../format_checker/main.py), but it is still the responsibility of the participants to double-check that 
-their submissions are correct. <br>
+We have implemented some [checkers](../format_checker/main.py), but it is still the responsibility of the participants to double-check that their submissions are correct. <br>
 
-You should submit the output tsv file via the [submission link](https://docs.google.com/forms/d/e/1FAIpQLSfsBfruzsYLg9mngQmLkKjBeyazxeAD-uknonXqJhVoozsKDg/viewform). 
+You should submit the output TSV file via the [submission link](https://docs.google.com/forms/d/e/1FAIpQLSfsBfruzsYLg9mngQmLkKjBeyazxeAD-uknonXqJhVoozsKDg/viewform). 
 <br>
-You have to submit **ONE** primary submission and you could submit up to **TWO** contrastive submissions. 
+You have to submit **ONE** primary submission, and optionally you could submit up to **TWO** contrastive runns. 
 <br>
-If make multiple primary/contrastive 1/contrastive 2 submissions, only the latest ones will be considered.
+If you make multiple primary/contrastive 1/contrastive 2 submissions, only the latest ones will be considered.
 <br>
-The official ranking will be based on the primary submission
+The official ranking will be based on the primary submission.
 
-As a reminder, participants can submit predictions more than once, but only the last one before the deadline 
+As a reminder, the participants can submit predictions more than once, but only the last one before the deadline 
 **(5 June 2020)** will be evaluated and considered as official. 
