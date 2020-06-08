@@ -5,13 +5,13 @@ The task consists in ranking a stream of tweets according to their check-worthin
 
 ````
 FCPD corpus for the CLEF-2020 LAB on "Automatic Identification and Verification of Claims"
-Version 4.0: Jun 3rd, 2020 (Data, Baseline, Input-Test data Release)
+Version 5.0: Jun 8th, 2020 (Data, Baseline, Test data Release)
 ````
 
 This file contains the basic information regarding the CLEF2020-CheckThat! Task 1
 on check-worthiness on tweets provided for the CLEF2020-CheckThat! Lab
 on "Automatic Identification and Verification of Claims".
-The current version (4.0, Jun 3rd, 2020) corresponds to the release of the first batch of the training data set. 
+The current version (5.0, Jun 8th, 2020) corresponds to the release of the first batch of the training data set. 
 The test set is released with the current version.
 
 __Table of contents:__
@@ -45,6 +45,8 @@ TBA
 
 * __4.0 [2020/06/03]__ - Fixed test data tweet JSON object's formatting
 
+* __5.0 [2020/06/08]__ - Test Data with gold labels released
+
 ## Contents of the Repository
 
 We provide the following files:
@@ -65,6 +67,11 @@ We provide the following files:
     * [dev_v2.json](data/v2/dev_v2.json) <br/>
     Contains the twitter object for the tweets included in the dev dataset
     Note: Not all tweets which are included in the training and dev sets have a corresponding twitter object
+  * Subfolder: [test](data/test)
+    * [test-annoations.tsv](data/test/test-annoations.tsv) <br/>
+    Contains the test tweets with claim worthiness labels
+    * [test-input.json](data/test/test-input.json) <br/>
+    Contains the twitter object for the tweets included in the test set
 * [README.md](README.md) <br/>
   this file
   
