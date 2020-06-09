@@ -33,7 +33,8 @@ __Table of contents:__
 
 ## Evaluation Results
 
-TBA
+https://docs.google.com/spreadsheets/d/1-piLMaTvLgK3pcMsUnAlrw-z0_a7hlhTYAC-2cCxMvY/edit?usp=sharing
+
 
 ## List of Versions
 
@@ -68,9 +69,9 @@ We provide the following files:
     Contains the twitter object for the tweets included in the dev dataset
     Note: Not all tweets which are included in the training and dev sets have a corresponding twitter object
   * Subfolder: [test](data/test)
-    * [test-annoations.tsv](data/test/test-annoations.tsv) <br/>
-    Contains the test tweets with claim worthiness labels
-    * [test-input.json](data/test/test-input.json) <br/>
+    * [test-gold.tsv](data/test.zip) <br/>
+    Contains the test tweets with gold labels
+    * [test-input.json](data/test/test.zip) <br/>
     Contains the twitter object for the tweets included in the test set
 * [README.md](README.md) <br/>
   this file
