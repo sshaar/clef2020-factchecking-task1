@@ -45,39 +45,34 @@ You can find the results in this spreadsheet, https://tinyurl.com/y9sjooxo.
 
 * __4.0 [2020/06/03]__ - Fixed test data tweet JSON object's formatting
 
-* __5.0 [2020/06/08]__ - Test Data with gold labels released
+* __5.0 [2020/06/08]__ - Official test results and gold labels released"
 
 ## Contents of the Repository
 
 We provide the following files:
 
 * Main folder: [data](data)
-  * Subfolder: [v1](data/v1)
-    * [training.tsv](data/v1/training.tsv) <br/>
+  * Subfolder: [v1](data/v1.zip)
+    * [training.tsv](data/v1.zip) <br/>
     Contains the training tweets with claim worthiness labels from the first (outdated) version of the data
-    * [dev.tsv](data/v1/dev.tsv) <br/>
+    * [dev.tsv](data/v1.zip) <br/>
     Contains the dev tweets with claim worthiness labels from the first (outdated) version of the data
-  * Subfolder: [v2](data/v2)
-    * [training_v2.tsv](data/v2/training_v2.tsv) <br/>
+  * Subfolder: [v2](data/v2.zip)
+    * [training_v2.tsv](data/v2.zip) <br/>
     Contains the training tweets with claim worthiness labels from the second (and latest) version of the data
-    * [dev_v2.tsv](data/v2/dev_v2.tsv) <br/>
+    * [dev_v2.tsv](data/v2.zip) <br/>
     Contains the dev tweets with claim worthiness labels from the second (and latest) version of the data
-    * [training_v2.json](data/v2/training_v2.json) <br/>
+    * [training_v2.json](data/v2.zip) <br/>
     Contains the [twitter object](https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object) for the tweets included in the v2 training dataset
-    * [dev_v2.json](data/v2/dev_v2.json) <br/>
+    * [dev_v2.json](data/v2.zip) <br/>
     Contains the twitter object for the tweets included in the dev dataset
     Note: Not all tweets which are included in the training and dev sets have a corresponding twitter object
-  * Subfolder: [test](data/test)
-    * [test-gold.tsv](data/test.zip) <br/>
-    Contains the test tweets with gold labels
-    * [test-input.json](data/test/test.zip) <br/>
-    Contains the twitter object for the tweets included in the test set
 * [README.md](README.md) <br/>
   this file
   
 * Main folder: [test-input](test-input)
   * [test-input.zip](test-input/test-input.zip) <br/>
-    File containing tweets used for testing
+    File containing tweets used for testing with gold labels
 
 ## Data Format
 
