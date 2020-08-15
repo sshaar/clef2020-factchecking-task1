@@ -210,7 +210,7 @@ Contact:   clef-factcheck@googlegroups.com
 You can find the overview paper on the CLEF2020-CheckThat! Lab in the papers papers, "Overview of CheckThat! 2020 --- Automatic Identification and
 Verification of Claims in Social Media" (see citation bellow) in this [link](https://arxiv.org/pdf/2007.07997.pdf), and "CheckThat! at CLEF 2020: Enabling the Automatic Identification and Verification of Claims in Social Media" (see citation bellow) in this [link](https://arxiv.org/pdf/2001.08546.pdf). 
 
-You can find CLEF2020-CheckThat! Task 2 details published in the paper "Overview of the CLEF-2020 CheckThat! Lab on Automatic 
+You can find CLEF2020-CheckThat! Task 1 details published in the paper "Overview of the CLEF-2020 CheckThat! Lab on Automatic 
 Identification and Verification of Claims in Social Media: English tasks" (see citation bellow).
 
 
