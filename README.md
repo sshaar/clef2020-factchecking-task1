@@ -241,15 +241,15 @@ Verification of Claims in Social Media",
  author = "Shaar, Shaden and
     Nikolov, Alex and
     Babulkov, Nikolay and
-    Alam, Firoj and
+    Alam, Firoj and  
     Barr\'{o}n-Cede{\~n}o, Alberto and
     Elsayed, Tamer and
-    Hasanain, Maram and   
+    Hasanain, Maram and    
     Suwaileh, Reem and
     Haouari, Fatima and
     {Da San Martino}, Giovanni and
     Nakov, Preslav",
-  title = "Overview of the {CLEF-2020 CheckThat!} Lab on Automatic Identification and Verification of Claims in Social Media: {E}nglish tasks",
+ title = "Overview of {CheckThat!} 2020 {E}nglish: Automatic Identification and Verification of Claims in Social Media",
   booktitle = "Working Notes of CLEF 2020---Conference and Labs of the Evaluation Forum",
   series = {CLEF~'2020},
   address = {Thessaloniki, Greece},
